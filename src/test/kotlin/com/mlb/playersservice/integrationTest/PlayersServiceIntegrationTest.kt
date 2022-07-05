@@ -53,5 +53,5 @@ class PlayersServiceIntegrationTest @Autowired constructor(
 val uuid: UUID = UUID.randomUUID()
 
 fun createPlayer(): Player {
-    return Player(id = uuid)
+    return Player(playerId = uuid)
 }

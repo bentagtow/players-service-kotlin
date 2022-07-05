@@ -7,7 +7,7 @@ import java.util.*
 @Document(value = "players")
 data class Player(
     @Id
-    val id: UUID,
+    val playerId: UUID,
     val name: String? = null,
     val positions: List<Position>? = null,
     val seasons: List<PlayerSeasons>? = null

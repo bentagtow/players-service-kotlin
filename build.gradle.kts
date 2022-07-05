@@ -28,6 +28,7 @@ dependencies {
 	testImplementation("org.testcontainers:mongodb:1.17.2")
 	testImplementation("org.testcontainers:junit-jupiter:1.17.2")
 	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("io.mockk:mockk:1.12.4")
 }
 
 tasks.withType<KotlinCompile> {
