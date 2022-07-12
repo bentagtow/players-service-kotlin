@@ -11,13 +11,8 @@ import java.util.*
 
 @RestController
 class PlayersController constructor(private val playersService: PlayersService){
-
-
     @GetMapping("/players/{playerId}/stats")
     fun getPlayerStats(@PathVariable playerId: UUID): ResponseEntity<Mono<Player?>> {
-
         return ResponseEntity.ok(playersService.getPlayerStats(playerId))
-
     }
-
 }

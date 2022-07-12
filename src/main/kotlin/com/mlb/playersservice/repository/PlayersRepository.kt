@@ -6,4 +6,4 @@ import org.springframework.stereotype.Repository
 import java.util.*
 
 @Repository
-interface PlayersRepository: ReactiveMongoRepository<Player, UUID>{}
+interface PlayersRepository: ReactiveMongoRepository<Player, UUID>

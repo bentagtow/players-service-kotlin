@@ -10,10 +10,10 @@ data class Player(
     val playerId: UUID,
     val name: String? = null,
     val positions: List<Position>? = null,
-    val seasons: List<PlayerSeasons>? = null
+    val seasons: List<PlayerSeason>? = null
 )
 
-data class PlayerSeasons (
+data class PlayerSeason(
     val year: Int? = null,
     val salary: Long? = null,
     val teamIds: List<UUID>? = null,
@@ -41,6 +41,13 @@ data class Position (
 
 enum class PositionType {
     PITCHER,
-    HITTER
+    FIRST,
+    SECOND,
+    THIRD,
+    CATCHER,
+    SHORT_STOP,
+    CF,
+    LF,
+    RF
 }
 

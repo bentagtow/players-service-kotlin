@@ -1,5 +1,6 @@
-package com.mlb.playersservice.controller
+package com.mlb.playersservice.unitTest.controller
 
+import com.mlb.playersservice.controller.PlayersController
 import com.mlb.playersservice.domain.repository.Player
 import com.mlb.playersservice.service.PlayersService
 import io.mockk.every
